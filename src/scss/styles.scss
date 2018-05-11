@@ -4,11 +4,9 @@
 @import 'mediaqueries.scss';
 @import 'fonts.scss';
 
-@import 'components/header.scss';
-@import 'components/sidebar.scss';
-
 body {
     background-color: #fff;
+    font-family: 'Montserrat' !important;
 }
 
 .main-container {
@@ -36,5 +34,10 @@ body {
 }
 
 
-/* * * ELEMENTOS BÁSICOS HTML * * */
+// Componentes
 
+@import './components/tables.scss';
+@import './components/acordeon.scss';
+@import './components/container-box.scss';
+@import 'components/header.scss';
+@import 'components/sidebar.scss';

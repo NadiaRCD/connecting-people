@@ -1,0 +1,35 @@
+.accordion {
+  width: 58em;
+  background-color: #FFF;
+  .accordion-item{
+    border-top: 1px solid $brand-blue_link;
+    .accordion-header {
+      font-size: 14px;
+      padding: 1em;
+      cursor: pointer;
+      if .accordion-item:active{
+        background-color: #efffda !important;
+      }
+      .accordion-header-title{
+        color: $brand-blue_dark;
+        font-weight: 500;
+      }
+      .accordion-header-subtitle{
+        color: $brand-blue_link;
+        font-weight: 300;
+        padding-left: 2em;
+      }
+    }
+    .accordion-body {
+      display: none;
+    }
+    &:last-child{
+      border-bottom: 1px solid $brand-blue_link;
+    }
+  }
+}
+
+// Clases disparadas por JS
+.active-header{
+  background-color: #efffda !important;
+}
