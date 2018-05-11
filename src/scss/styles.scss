@@ -1,0 +1,40 @@
+@import 'reset.scss';
+@import 'var.scss';
+@import 'mixing.scss';
+@import 'mediaqueries.scss';
+@import 'fonts.scss';
+
+@import 'components/header.scss';
+@import 'components/sidebar.scss';
+
+body {
+    background-color: #fff;
+}
+
+.main-container {
+    margin: 5em auto 0 auto !important;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.button {
+    @include button;
+}
+
+.highlights {
+    border-radius: 1em;
+    font-size: 80%;
+    line-height: 1.6;
+    margin: 2em 0;
+    padding: 2.5em;
+    background: #f0f2f4;
+    overflow: auto;
+    font-family: 'Montserrat';
+    pre {
+        width: 100%;
+    }
+}
+
+
+/* * * ELEMENTOS BÁSICOS HTML * * */
+

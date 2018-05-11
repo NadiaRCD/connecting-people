@@ -1,0 +1,56 @@
+header {
+    .header-navbar {
+        width: 100%;
+        height: 3.3em;
+        background-color: $brand-blue_main;
+        color: #fff;
+        padding-left: 0;
+        .header-button_burger {
+            width: 2em;
+            height: 2em;
+            background-color: $brand-blue_main;
+            border: none;
+            color: #fff;
+            font-size: 1.6em;
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        .img-brand {
+            width: 8em;
+            height: 2.68em;
+            margin-right: 2em;
+        }
+        .navbar-title {
+            display: inline;
+            font-family: $font-family;
+            padding-top: 0.4em;
+        }
+
+        .user-img {
+                border-radius: 50%;
+                width: 2.5em;
+                height: 2.5em;
+                margin-right: 0.5em;
+                margin-left: 42em;
+        }
+        .user {
+                font-size: 0.75em;
+                margin: 0;
+        }
+
+     }
+    /* componente notifications */
+        .fa-bell {
+            margin-left: 1.8em;
+            font-size: 1.8em;
+        }
+
+    /* component header-menu-user */
+        .fa-ellipsis-v {
+            font-size: 1.2em;
+            margin-left: 2em;
+        }
+
+}
