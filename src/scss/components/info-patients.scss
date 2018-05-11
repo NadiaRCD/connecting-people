@@ -1,0 +1,75 @@
+.info-patients {
+    display: inline-block;
+    width: 16.43em;
+    height: 100%;
+    border-right: 1px solid $gray_disabled;
+    padding-top: 0.8em;
+    z-index: -1;
+    .fas {
+        font-size: 1.5em;
+        color: $gray_typo;
+    }
+    .fa-chevron-right {
+        color: $brand-blue_main;
+    }
+    .fa-user-circle {
+        margin-left: 2.2em;
+        margin-right: 2.3em;
+        font-size: 2.5em;
+        color: $purple;
+    }
+    .patients-data {
+        margin-top: 0.4em;
+        text-align: center;
+    }
+    .patients-name {
+        color: $brand-blue_main;
+        font-size: 1em;
+    }
+    .patients-genre-age {
+        font-size: 0.8em;
+        color: $gray_typo;
+    }
+    .patients-contact {
+        margin-bottom: 0;
+        color: $purple;
+        font-size: 0.87em;
+    }
+    .patients-rut {
+        margin-top: 0.4em;
+        margin-bottom: 0;
+        font-size: 0.75em;
+        color: $gray_typo;
+    }
+    .patients-prevision {
+        font-size: 0.75em;
+        color: $gray_typo
+    }
+    .datos-paciente {
+        color: $brand-blue_main;
+        font-size: 0.75em;
+    }
+    .patients-buttons {
+        @include button;
+        font-size: 0.75em;
+        width: 200px;
+        height: 30px;
+        border: solid 1px $brand-blue_main;
+        margin-left: 2em;
+        margin-bottom: 0.6em;
+        text-align: left;
+        color: $brand-blue_main;
+        .fas{
+            font-size: 1em;
+            margin-left: 2em;
+        }
+    }
+    .patients-state {
+        text-align: center;
+        font-size: 0.75em;
+        color: $gray_typo;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

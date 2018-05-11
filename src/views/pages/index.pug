@@ -13,12 +13,12 @@ html(lang='en')
     
   body
     include ../components/header
-    .row
-      .col-1
+
+    .row.fix-margin
+      .col-3.fix-padding.display-content
         include ../components/sidebar
-      .col-4
         include ../components/info-patients
-      .col-7
+      .col-9
         h1 tabla
           
     script(src="js/libs/jquery-3.3.1.min.js")

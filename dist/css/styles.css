@@ -123,26 +123,37 @@ header .header-navbar .header-button_burger:focus {
 header .header-navbar .img-brand {
   width: 8em;
   height: 2.68em;
-  margin-right: 2em;
+  margin-right: 0.5em;
 }
 
 header .header-navbar .navbar-title {
-  display: inline;
+  display: inline-block;
+  font-size: 1.25em;
   font-family: "Montserrat";
   padding-top: 0.4em;
 }
 
 header .header-navbar .user-img {
   border-radius: 50%;
-  width: 2.5em;
+  width: 2.8em;
   height: 2.5em;
   margin-right: 0.5em;
   margin-left: 42em;
+  margin-top: 0.2em;
 }
 
 header .header-navbar .user {
   font-size: 0.75em;
   margin: 0;
+}
+
+header .header-navbar .user-name {
+  margin-top: 0.2em;
+  font-weight: bold;
+}
+
+header .header-navbar .user-info {
+  font-weight: lighter;
 }
 
 header .fa-bell {
@@ -162,6 +173,8 @@ header .fa-ellipsis-v {
   background-image: linear-gradient(to bottom, #295d83, #4d8bb4);
   -webkit-transition: 1s;
   transition: 1s;
+  margin-right: 0.6em;
+  z-index: 2;
 }
 
 .sidebar_background .sidebar-list-button {
@@ -178,7 +191,7 @@ header .fa-ellipsis-v {
   display: none;
 }
 
-.sidebar_background .sidebar-list-button li[class^='list-button']:focus-within {
+.sidebar_background .sidebar-list-button li[class^='buttons-sidebar']:focus-within {
   background-color: #05345C;
 }
 
@@ -194,33 +207,110 @@ header .fa-ellipsis-v {
   width: 15em;
 }
 
-body {
-  background-color: #fff;
+.info-patients {
+  display: inline-block;
+  width: 16.43em;
+  height: 100%;
+  border-right: 1px solid #CACACA;
+  padding-top: 0.8em;
+  z-index: -1;
 }
 
-.main-container {
-  margin: 5em auto 0 auto !important;
-  padding-left: 7px;
-  padding-right: 7px;
+.info-patients .fas {
+  font-size: 1.5em;
+  color: #6C6E71;
+}
+
+.info-patients .fa-chevron-right {
+  color: #0079C8;
+}
+
+.info-patients .fa-user-circle {
+  margin-left: 2.2em;
+  margin-right: 2.3em;
+  font-size: 2.5em;
+  color: #755296;
+}
+
+.info-patients .patients-data {
+  margin-top: 0.4em;
+  text-align: center;
+}
+
+.info-patients .patients-name {
+  color: #0079C8;
+  font-size: 1em;
+}
+
+.info-patients .patients-genre-age {
+  font-size: 0.8em;
+  color: #6C6E71;
+}
+
+.info-patients .patients-contact {
+  margin-bottom: 0;
+  color: #755296;
+  font-size: 0.87em;
+}
+
+.info-patients .patients-rut {
+  margin-top: 0.4em;
+  margin-bottom: 0;
+  font-size: 0.75em;
+  color: #6C6E71;
+}
+
+.info-patients .patients-prevision {
+  font-size: 0.75em;
+  color: #6C6E71;
+}
+
+.info-patients .datos-paciente {
+  color: #0079C8;
+  font-size: 0.75em;
+}
+
+.info-patients .patients-buttons {
+  border-radius: 0.3em;
+  font-size: 0.75em;
+  width: 200px;
+  height: 30px;
+  border: solid 1px #0079C8;
+  margin-left: 2em;
+  margin-bottom: 0.6em;
+  text-align: left;
+  color: #0079C8;
+}
+
+.info-patients .patients-buttons .fas {
+  font-size: 1em;
+  margin-left: 2em;
+}
+
+.info-patients .patients-state {
+  text-align: center;
+  font-size: 0.75em;
+  color: #6C6E71;
+}
+
+.info-patients .patients-state p {
+  margin-bottom: 0;
+}
+
+body {
+  overflow-y: hidden;
 }
 
 .button {
   border-radius: 0.3em;
 }
 
-.highlights {
-  border-radius: 1em;
-  font-size: 80%;
-  line-height: 1.6;
-  margin: 2em 0;
-  padding: 2.5em;
-  background: #f0f2f4;
-  overflow: auto;
-  font-family: 'Montserrat';
+.fix-margin {
+  margin-right: 0 !important;
 }
 
-.highlights pre {
-  width: 100%;
+.display-content {
+  display: inherit;
 }
 
 /* * * ELEMENTOS BÁSICOS HTML * * */
