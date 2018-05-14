@@ -90,7 +90,7 @@ body {
 }
 
 .fix.width {
-  max-width: 22% !important;
+  max-width: 23% !important;
 }
 
 table .table-header {
@@ -350,7 +350,8 @@ header .fa-ellipsis-v {
 }
 
 .sidebar_background {
-  width: 3.5em;
+  width: 4em;
+  padding-left: 0.5em;
   height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#295d83), to(#4d8bb4));
   background-image: linear-gradient(to bottom, #295d83, #4d8bb4);
@@ -579,22 +580,3 @@ header .fa-ellipsis-v {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-
-body {
-  overflow-y: hidden;
-}
-
-.button {
-  border-radius: 0.3em;
-}
-
-.fix-margin {
-  margin-right: 0 !important;
-}
-
-.display-content {
-  display: inherit;
-}
-
-/* * * ELEMENTOS BÁSICOS HTML * * */
-
