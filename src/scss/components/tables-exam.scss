@@ -1,0 +1,36 @@
+table{
+  width: 100%;
+  
+  .table-header{
+    background-color: #F5FFFA;
+    color: $gray_typo;
+    font-size: 12px;
+    font-weight: 500;
+    padding: .5em;
+  }
+
+  .table-body{
+    font-size: 12px;
+    tr{
+      border-bottom: 1px solid #f0f0f0;
+      .table-typo-light_blue_link{
+        font-weight: 300;
+        color: $brand-blue_link;
+        display: block;
+        padding: 0 0 1em 1em;
+      }
+      .table-typo-light_blue_dark{
+        font-weight: 300;
+        color: $brand-blue_dark;
+        display: block;   
+        padding: 0 0 1em 1em;   
+      }
+      .table-typo_strong{
+        font-weight: 500;
+        color: $brand-blue_dark;
+        display: block;
+        padding: 1em;
+      }
+    }
+  }
+}

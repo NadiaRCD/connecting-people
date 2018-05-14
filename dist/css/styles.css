@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -44,54 +43,238 @@ table {
 /* Main */
 /* Secundary */
 /* * * Fonts * * */
-@media (max-width: 768px) {
-  .main-container {
-    margin: 0 7px !important;
-    width: auto;
-  }
-  .hide-sm {
-    visibility: hidden;
-    display: none;
-  }
-  .show-sm {
-    visibility: visible;
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1022px) {
-  .main-container {
-    width: 700px !important;
-  }
-  .hide-md {
-    visibility: hidden;
-    display: none;
-  }
-  .show-md {
-    visibility: visible;
-    display: block;
-  }
-}
-
-@media (min-width: 1023px) {
-  .main-container {
-    width: 900px !important;
-  }
-  .hide-lg {
-    visibility: hidden;
-    display: none;
-  }
-  .show-lg {
-    visibility: visible;
-    display: block;
-  }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/montserrat-bold-webfont.eot");
+  src: url("../assets/fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat-bold-webfont.woff") format("woff"), url("../assets/fonts/montserrat-bold-webfont.ttf") format("truetype"), url("../assets/fonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
+  font-weight: 700;
+  font-style: bold;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
-  font-weight: normal;
+  src: url("../assets/fonts/montserrat-medium-webfont.eot");
+  src: url("../assets/fonts/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat-medium-webfont.woff") format("woff"), url("../assets/fonts/montserrat-medium-webfont.ttf") format("truetype"), url("../assets/fonts/montserrat-medium-webfont.svg#montserratmedium") format("svg");
+  font-weight: 500;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/montserrat-light-webfont.eot");
+  src: url("../assets/fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-light-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat-light-webfont.woff") format("woff"), url("../assets/fonts/montserrat-light-webfont.ttf") format("truetype"), url("../assets/fonts/montserrat-light-webfont.svg#montserratlight") format("svg");
+  font-weight: 300;
+  font-style: light;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Montserrat' !important;
+  overflow-y: hidden;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.button {
+  border-radius: 0.3em;
+}
+
+.fix-margin {
+  margin-right: 0 !important;
+}
+
+.display-content {
+  display: inherit;
+}
+
+.fix.width {
+  max-width: 22% !important;
+}
+
+table .table-header {
+  background-color: #F5FFFA;
+  color: #6C6E71;
+  font-size: 12px;
+  font-weight: 500;
+  padding: .5em;
+}
+
+table .table-body {
+  font-size: 12px;
+}
+
+table .table-body tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+table .table-body tr .table-typo-light_blue_link {
+  font-weight: 300;
+  color: #7FBCE3;
+  display: block;
+  padding: 0 0 1em 1em;
+}
+
+table .table-body tr .table-typo-light_blue_dark {
+  font-weight: 300;
+  color: #05345C !important;
+  display: block;
+  padding: 0 0 1em 1em;
+}
+
+table .table-body tr .table-typo_strong {
+  font-weight: 500;
+  color: #05345C !important;
+  display: block;
+  padding: 1em;
+}
+
+table {
+  width: 100%;
+}
+
+table .table-header {
+  background-color: #F5FFFA;
+  color: #6C6E71;
+  font-size: 12px;
+  font-weight: 500;
+  padding: .5em;
+}
+
+table .table-body {
+  font-size: 12px;
+}
+
+table .table-body tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+table .table-body tr .table-typo-light_blue_link {
+  font-weight: 300;
+  color: #7FBCE3;
+  display: block;
+  padding: 0 0 1em 1em;
+}
+
+table .table-body tr .table-typo-light_blue_dark {
+  font-weight: 300;
+  color: #05345C !important;
+  display: block;
+  padding: 0 0 1em 1em;
+}
+
+table .table-body tr .table-typo_strong {
+  font-weight: 500;
+  color: #05345C !important;
+  display: block;
+  padding: 1em;
+}
+
+/* Acordeon examenes (interno) */
+.accordion_exam {
+  background-color: #FFF;
+}
+
+.accordion_exam .accordion-item-exam {
+  border-top: 1px solid #7FBCE3;
+  cursor: pointer;
+}
+
+.accordion_exam .accordion-item-exam .accordion-header-exam, .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-title, .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-subtitle {
+  font-size: 14px;
+  padding: 1em;
+}
+
+.accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-title {
+  color: #05345C !important;
+  font-weight: 500;
+}
+
+.accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-subtitle {
+  color: #0079C8;
+  font-weight: 300;
+  padding-left: 2em;
+}
+
+.accordion_exam .accordion-item-exam .accordion-body-exam {
+  display: none;
+}
+
+.accordion_exam .accordion-item-exam:last-child {
+  border-bottom: 1px solid #7FBCE3;
+}
+
+.active-accordion-exam {
+  background-color: #efffda !important;
+}
+
+/* Acordeon ordenes (externo) */
+.accordion .accordion-item .accordion-header {
+  padding: 1em;
+  background-color: #e0f4f4;
+  font-size: 14px;
+  color: #05345C !important;
+  cursor: pointer;
+}
+
+.accordion .accordion-item .accordion-header .accordion-header-title {
+  font-weight: 500;
+}
+
+.accordion .accordion-item .accordion-header .accordion-header-date, .accordion .accordion-item .accordion-header .accordion-header-doctor, .accordion .accordion-item .accordion-header .accordion-header-patient {
+  font-weight: 300;
+  padding-left: 2.5em;
+}
+
+.active-accordion-order {
+  background-color: #bfe0e0 !important;
+}
+
+.container-box {
+  width: 100%;
+  height: 100%;
+  background-color: #ECF5FA;
+  padding-top: 2.6em;
+}
+
+.container-box .tab-button, .container-box .tab-button_todo, .container-box .tab-button_ready {
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #05345C !important;
+  font-size: 14px;
+  padding-top: 0.7%;
+  text-align: center;
+  top: .77em;
+  text-decoration: none;
+}
+
+.container-box .tab-button_todo {
+  left: 2em;
+  font-weight: 300;
+}
+
+.container-box .tab-button_ready {
+  left: 12em;
+  font-weight: 300;
+}
+
+.container-box .container-inner_todo, .container-box .container-inner_ready {
+  padding: .8em;
+  background-color: #FFF;
+}
+
+.container-box .container-inner_ready {
+  display: none;
+  background-color: #7FC1C3;
+}
+
+.active-tab {
+  background-color: #FFF;
+  font-weight: 500 !important;
 }
 
 header {
@@ -191,7 +374,7 @@ header .fa-ellipsis-v {
 }
 
 .sidebar_background .sidebar-list-button li[class^='buttons-sidebar']:focus-within {
-  background-color: #05345C;
+  background-color: #05345C !important;
 }
 
 .sidebar_background .sidebar-extended {
@@ -325,7 +508,7 @@ header .fa-ellipsis-v {
   padding-top: 0.5em;
   padding-bottom: 0.2em;
   font-size: 12px;
-  color: #05345C;
+  color: #05345C !important;
 }
 
 .info-patients .ultima-consulta .patients-background_grey h6 {
@@ -414,3 +597,4 @@ body {
 }
 
 /* * * ELEMENTOS BÁSICOS HTML * * */
+

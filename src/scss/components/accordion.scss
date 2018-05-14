@@ -1,0 +1,67 @@
+/* Acordeon examenes (interno) */
+
+.accordion_exam {
+  background-color: #FFF;
+  .accordion-item-exam{
+    border-top: 1px solid $brand-blue_link;
+    cursor: pointer;
+    .accordion-header-exam {
+      font-size: 14px;
+      padding: 1em;
+      .accordion-exam-title{
+        @extend .accordion-header-exam;
+        color: $brand-blue_dark;
+        font-weight: 500;
+      }
+      .accordion-exam-subtitle{
+        @extend .accordion-header-exam;
+        color: $brand-blue_main;
+        font-weight: 300;
+        padding-left: 2em;
+      }
+    }
+    .accordion-body-exam {
+      display: none;
+    }
+    &:last-child{
+      border-bottom: 1px solid $brand-blue_link;
+    }
+  }
+}
+
+// Clases disparadas por JS
+.active-accordion-exam{
+  background-color: #efffda !important;
+}
+
+/* Acordeon ordenes (externo) */
+
+.accordion{
+  .accordion-item{
+    .accordion-header{
+      padding: 1em;
+      background-color: #e0f4f4;
+      font-size: 14px;
+      color: $brand-blue_dark;
+      cursor: pointer;
+      .accordion-header-title{
+        font-weight: 500;
+      }
+      .accordion-header-date{
+        font-weight: 300;
+        padding-left: 2.5em;
+      }
+      .accordion-header-doctor{
+        @extend .accordion-header-date;
+      }
+      .accordion-header-patient{
+        @extend .accordion-header-date;
+      }
+    }
+  }
+}
+
+// Clases disparadas por JS
+.active-accordion-order{
+  background-color: #bfe0e0 !important;
+}
