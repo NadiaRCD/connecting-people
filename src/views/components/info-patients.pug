@@ -1,6 +1,7 @@
 .info-patients
     include ../components/navegations-patients
     include ../components/patients-data
+
     - var buttonText = "Nueva reserva de hora"
     include ../components/info-patients-buttons
     - var buttonText = "Reservar por hora y precio"
@@ -9,12 +10,22 @@
     include ../components/info-patients-buttons
     - var buttonText = "Reenviar e-mail agendar"
     include ../components/info-patients-buttons
-    - var stateText = 'Llamar en otro momento'
-    include ../components/patients-state
-    - var iconState= 'far fa-list-alt';
-    - var stateText = 'No quiere hacer los exa.'
-    include ../components/patients-state
-    - var stateText = 'No quiere que lo contacten'
-    include ../components/patients-state
-    - var stateText = 'Paciente incontactable'
-    include ../components/patients-state
+
+    .margin-last-button
+        - var iconState= 'fas fa-toggle-on'
+        - var stateText = 'Llamar en otro momento'
+        include ../components/patients-state
+        - var iconState= 'far fa-list-alt'
+        - var stateText = 'No quiere hacer los exa.'
+        include ../components/patients-state
+        - var iconState = 'fas fa-phone'
+        - var stateText = 'No quiere que lo contacten'
+        include ../components/patients-state
+        - var iconState  = 'far fa-flag'
+        - var stateText = 'Paciente incontactable'
+        include ../components/patients-state
+
+    - var lastDate = '27/03/2018'
+    - var nameDoctor = 'Dr. Elena San Martín'
+    - var especiality = 'Dermatología'
+    include ../components/ultima-consulta

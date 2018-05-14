@@ -209,7 +209,7 @@ header .fa-ellipsis-v {
 
 .info-patients {
   display: inline-block;
-  width: 16.43em;
+  width: 16.45em;
   height: 100%;
   border-right: 1px solid #CACACA;
   padding-top: 0.8em;
@@ -284,17 +284,71 @@ header .fa-ellipsis-v {
 
 .info-patients .patients-buttons .fas {
   font-size: 1em;
-  margin-left: 2em;
+  margin-top: 0.2em;
+  float: right;
+}
+
+.info-patients .margin-last-button {
+  margin-top: 1.7em;
 }
 
 .info-patients .patients-state {
-  text-align: center;
-  font-size: 0.75em;
-  color: #6C6E71;
+  font-size: 12px;
+  color: #CACACA;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.info-patients .patients-state .fas, .info-patients .patients-state .far {
+  font-size: 12px;
 }
 
 .info-patients .patients-state p {
   margin-bottom: 0;
+  margin-left: 0.4em;
+}
+
+.info-patients .ultima-consulta {
+  margin-top: 2.6em;
+  font-size: 12px;
+}
+
+.info-patients .ultima-consulta .patients-background_grey {
+  text-align: left;
+  margin-left: 0.75em;
+  background-color: #c0cdd6;
+  width: 20em;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+  font-size: 12px;
+  color: #05345C;
+}
+
+.info-patients .ultima-consulta .patients-background_grey h6 {
+  margin-left: 0.7em;
+}
+
+.info-patients .ultima-consulta .date {
+  margin-top: 0.4em;
+  margin-bottom: 0;
+  margin-left: 1.4em;
+  font-weight: 300;
+}
+
+.info-patients .ultima-consulta .doctor {
+  color: #0079C8;
+  margin-left: 1.4em;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.info-patients .ultima-consulta .especiality {
+  color: #6C6E71;
+  font-weight: 300;
+  margin-left: 1.4em;
 }
 
 body {
