@@ -89,6 +89,10 @@ body {
   display: inherit;
 }
 
+.fix.width {
+  max-width: 22% !important;
+}
+
 table .table-header {
   background-color: #F5FFFA;
   color: #6C6E71;
