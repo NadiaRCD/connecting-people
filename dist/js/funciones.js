@@ -10,9 +10,9 @@ $("li[class^='list-button']").click(function() {
 
 /* Acordeon */
 
-$('.accordion').on('click','.active-accordion-orders',function(){
+$('.accordion').on('click','.accordion-header-orders',function(){
     var t = $(this);
-    $('.accordion-header').removeClass('active-accordion-order')
+    $('.accordion-header-orders').removeClass('active-accordion-order')
     t.addClass('active-accordion-order')
       var tp = t.next();
       var p = t.parent().siblings().find('.accordion-body-orders');
@@ -28,6 +28,7 @@ $('.accordion').on('click','.active-accordion-orders',function(){
       var p = t.parent().siblings().find('.accordion-body-exam');
       tp.slideToggle();
     p.slideUp();
+    $('.open-accordion').addClass('rotate')
   });
 
 
@@ -46,3 +47,5 @@ $('.tab-button_ready').click(function() {
     $('.tab-button_todo').removeClass('active-tab')
     $('.tab-button_ready').addClass('active-tab')
 })
+
+/* Sort table */

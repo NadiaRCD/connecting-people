@@ -41,6 +41,7 @@ table {
 /* * * MEDIAQUERIES * * */
 /* * * COLORS * * */
 /* Main */
+/*#7FBCE3*/
 /* Secundary */
 /* * * Fonts * * */
 @font-face {
@@ -105,41 +106,22 @@ body {
   display: inherit;
 }
 
-table .table-header {
-  background-color: #F5FFFA;
+table .table-header-order {
+  background-color: #f2f2f2;
   color: #6C6E71;
   font-size: 12px;
   font-weight: 500;
-  padding: .5em;
+  padding: 1em 1.2em;
 }
 
-table .table-body {
-  font-size: 12px;
+table .table-header-order .icon_up, table .table-header-order .icon_down {
+  width: 10px;
+  position: absolute;
+  margin: 0 0.7em;
 }
 
-table .table-body tr {
-  border-bottom: 1px solid #f0f0f0;
-}
-
-table .table-body tr .table-typo-light_blue_link {
-  font-weight: 300;
-  color: #7FBCE3;
-  display: block;
-  padding: 0 0 1em 1em;
-}
-
-table .table-body tr .table-typo-light_blue_dark {
-  font-weight: 300;
-  color: #05345C !important;
-  display: block;
-  padding: 0 0 1em 1em;
-}
-
-table .table-body tr .table-typo_strong {
-  font-weight: 500;
-  color: #05345C !important;
-  display: block;
-  padding: 1em;
+table .table-header-order .icon_down {
+  top: 75px;
 }
 
 table {
@@ -164,7 +146,7 @@ table .table-body tr {
 
 table .table-body tr .table-typo-light_blue_link {
   font-weight: 300;
-  color: #7FBCE3;
+  color: #0093ff;
   display: block;
   padding: 0 0 1em 1em;
 }
@@ -189,13 +171,13 @@ table .table-body tr .table-typo_strong {
 }
 
 .accordion_exam .accordion-item-exam {
-  border-top: 1px solid #7FBCE3;
+  border-top: 1px solid #0079C8;
   cursor: pointer;
 }
 
 .accordion_exam .accordion-item-exam .accordion-header-exam, .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-title, .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-subtitle {
   font-size: 14px;
-  padding: 1em;
+  padding: 1em .5em;
 }
 
 .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-title {
@@ -214,7 +196,7 @@ table .table-body tr .table-typo_strong {
 }
 
 .accordion_exam .accordion-item-exam:last-child {
-  border-bottom: 1px solid #7FBCE3;
+  border-bottom: 1px solid #0079C8;
 }
 
 .active-accordion-exam {
@@ -222,25 +204,38 @@ table .table-body tr .table-typo_strong {
 }
 
 /* Acordeon ordenes (externo) */
-.accordion .accordion-item .accordion-header {
+.accordion .accordion-item .accordion-header-orders {
   padding: 1em;
-  background-color: #e0f4f4;
+  position: relative;
+  background-color: #f5fcfc;
   font-size: 14px;
   color: #05345C !important;
   cursor: pointer;
 }
 
-.accordion .accordion-item .accordion-header .accordion-header-title {
+.accordion .accordion-item .accordion-header-orders .accordion-header-title {
   font-weight: 500;
 }
 
-.accordion .accordion-item .accordion-header .accordion-header-date, .accordion .accordion-item .accordion-header .accordion-header-doctor, .accordion .accordion-item .accordion-header .accordion-header-patient {
+.accordion .accordion-item .accordion-header-orders .accordion-header-date, .accordion .accordion-item .accordion-header-orders .accordion-header-doctor, .accordion .accordion-item .accordion-header-orders .accordion-header-patient {
   font-weight: 300;
   padding-left: 2.5em;
 }
 
+.accordion .accordion-item .accordion-header-orders .open-accordion {
+  width: 1em;
+  position: absolute;
+  right: 3em;
+  top: 1.5em;
+}
+
 .active-accordion-order {
   background-color: #bfe0e0 !important;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .container-box {
@@ -274,9 +269,20 @@ table .table-body tr .table-typo_strong {
   font-weight: 300;
 }
 
+.container-box .circle_magenta {
+  background-color: #C5017F;
+  width: .6em;
+  border-radius: 50%;
+  height: .6em;
+  position: absolute;
+  top: 13px;
+  left: 6px;
+}
+
 .container-box .container-inner_todo, .container-box .container-inner_ready {
   padding: .8em;
   background-color: #FFF;
+  height: 100%;
 }
 
 .container-box .container-inner_ready {
@@ -514,7 +520,7 @@ header .fa-ellipsis-v {
 .info-patients .ultima-consulta .patients-background_grey {
   text-align: left;
   margin-left: 0.75em;
-  background-color: #c0cdd6;
+  background-color: #f2f2f2;
   width: 20em;
   padding-top: 0.5em;
   padding-bottom: 0.2em;

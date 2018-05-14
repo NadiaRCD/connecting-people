@@ -27,9 +27,19 @@
         font-weight: 300;
       }
     }
+    .circle_magenta{
+      background-color: #C5017F;
+      width: .6em;
+      border-radius: 50%;
+      height: .6em;
+      position: absolute;
+      top: 13px;
+      left: 6px;
+    }
     .container-inner_todo{
       padding: .8em;
       background-color: #FFF;
+      height: 100%;
     }
     .container-inner_ready{
       @extend .container-inner_todo;
