@@ -20,24 +20,33 @@ header {
         .img-brand {
             width: 8em;
             height: 2.68em;
-            margin-right: 2em;
+            margin-right: 0.5em;
         }
         .navbar-title {
-            display: inline;
+            display: inline-block;
+            font-size: 1.25em;
             font-family: $font-family;
             padding-top: 0.4em;
         }
 
         .user-img {
                 border-radius: 50%;
-                width: 2.5em;
+                width: 2.8em;
                 height: 2.5em;
                 margin-right: 0.5em;
                 margin-left: 42em;
+                margin-top: 0.2em;
         }
         .user {
                 font-size: 0.75em;
                 margin: 0;
+        }
+        .user-name {
+            margin-top: 0.2em;
+            font-weight: bold;
+        }
+        .user-info {
+            font-weight: lighter;
         }
 
      }
