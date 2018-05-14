@@ -329,10 +329,13 @@ header .fa-ellipsis-v {
 <<<<<<< HEAD
 .sidebar_background .sidebar-list-button li[class^='list-button']:focus-within {
   background-color: #05345C !important;
+<<<<<<< HEAD
 =======
 .sidebar_background .sidebar-list-button li[class^='buttons-sidebar']:focus-within {
   background-color: #05345C;
 >>>>>>> a061ee5c99d5c46881a32a4a2e6c128cb0274ebd
+=======
+>>>>>>> master
 }
 
 .sidebar_background .sidebar-extended {
@@ -346,6 +349,7 @@ header .fa-ellipsis-v {
 .active {
   width: 15em;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -511,3 +515,5 @@ body {
 
 /* * * ELEMENTOS BÁSICOS HTML * * */
 >>>>>>> a061ee5c99d5c46881a32a4a2e6c128cb0274ebd
+=======
+>>>>>>> master
