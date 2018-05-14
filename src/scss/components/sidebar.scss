@@ -4,7 +4,6 @@
     background-image: linear-gradient(to bottom, #295d83, #4d8bb4);
     transition: 1s;
     margin-right: 0.6em;
-    z-index: 2;
     .sidebar-list-button {
         list-style: none;
         li {
@@ -31,6 +30,7 @@
 
 /* clase disparada js */
 .active {
+    z-index: 2;
      width: 15em;
 }
 

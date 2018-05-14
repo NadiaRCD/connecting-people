@@ -23,7 +23,7 @@
         text-align: center;
     }
     .patients-name {
-        color: $brand-blue_main;
+        color: $blue_typo;
         font-size: 1em;
     }
     .patients-genre-age {
@@ -54,11 +54,11 @@
         font-size: 12px;
         width: 200px;
         height: 30px;
-        border: solid 1px #0073CF;
+        border: solid 1px $blue_typo;
         margin-left: 2em;
         margin-bottom: 0.6em;
         text-align: left;
-        color: #0073CF;
+        color: $blue_typo;
         font-weight: 500;
         .fas{
             font-size: 1em;
@@ -106,7 +106,7 @@
             font-weight: 300;
         }
         .doctor {
-            color: $brand-blue_main;
+            color: $blue_typo;
             margin-left: 1.4em;
             margin-bottom: 0;
             font-weight: 500;

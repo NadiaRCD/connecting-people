@@ -174,7 +174,6 @@ header .fa-ellipsis-v {
   -webkit-transition: 1s;
   transition: 1s;
   margin-right: 0.6em;
-  z-index: 2;
 }
 
 .sidebar_background .sidebar-list-button {
@@ -204,6 +203,7 @@ header .fa-ellipsis-v {
 
 /* clase disparada js */
 .active {
+  z-index: 2;
   width: 15em;
 }
 
@@ -238,7 +238,7 @@ header .fa-ellipsis-v {
 }
 
 .info-patients .patients-name {
-  color: #0079C8;
+  color: #0092DA;
   font-size: 1em;
 }
 
@@ -275,11 +275,11 @@ header .fa-ellipsis-v {
   font-size: 12px;
   width: 200px;
   height: 30px;
-  border: solid 1px #171AFF;
+  border: solid 1px #0092DA;
   margin-left: 2em;
   margin-bottom: 0.6em;
   text-align: left;
-  color: #171AFF;
+  color: #0092DA;
   font-weight: 500;
 }
 
@@ -320,7 +320,7 @@ header .fa-ellipsis-v {
 .info-patients .ultima-consulta .patients-background_grey {
   text-align: left;
   margin-left: 0.75em;
-  background-color: #c0cdd6;
+  background-color: #E8EEF2;
   width: 20em;
   padding-top: 0.5em;
   padding-bottom: 0.2em;
@@ -340,7 +340,7 @@ header .fa-ellipsis-v {
 }
 
 .info-patients .ultima-consulta .doctor {
-  color: #0079C8;
+  color: #0092DA;
   margin-left: 1.4em;
   margin-bottom: 0;
   font-weight: 500;
@@ -350,6 +350,30 @@ header .fa-ellipsis-v {
   color: #6C6E71;
   font-weight: 300;
   margin-left: 1.4em;
+}
+
+.modal-success {
+  text-align: center;
+}
+
+.modal-success .modal-content {
+  border-radius: 1.25em;
+}
+
+.modal-success h5 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
+.modal-success .circle-check {
+  margin-bottom: 1.2em;
+  width: 5em;
+  height: 5em;
+}
+
+.modal-success .modal-mail {
+  background-color: #ECF5FA;
 }
 
 body {

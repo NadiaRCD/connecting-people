@@ -1,0 +1,19 @@
+.modal-success {
+    text-align: center;
+    .modal-content {
+        border-radius: 1.25em;
+    }
+    h5 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-weight: normal;
+    }
+    .circle-check {
+        margin-bottom: 1.2em;
+        width: 5em;
+        height: 5em;
+    }
+    .modal-mail {
+        background-color: $brand-blue_ligth;
+    }
+}

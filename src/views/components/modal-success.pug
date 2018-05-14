@@ -1,0 +1,11 @@
+
+.moda.modal-success(tabindex="-1", role="dialog")
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-body
+                h5 La hora fue agendada con éxito
+                img.circle-check(src="assets/imgs/Check_Circle.svg.png", alt="circle-check")
+                .modal-mail
+                    p La cita ha sido enviada al e-mail 
+                        span #{emailPatients}
+                    button(type="button", data-dismiss="modal", aria-label="Close") Aceptar
