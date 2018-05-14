@@ -272,14 +272,15 @@ header .fa-ellipsis-v {
 
 .info-patients .patients-buttons {
   border-radius: 0.3em;
-  font-size: 0.75em;
+  font-size: 12px;
   width: 200px;
   height: 30px;
-  border: solid 1px #0079C8;
+  border: solid 1px #171AFF;
   margin-left: 2em;
   margin-bottom: 0.6em;
   text-align: left;
-  color: #0079C8;
+  color: #171AFF;
+  font-weight: 500;
 }
 
 .info-patients .patients-buttons .fas {
