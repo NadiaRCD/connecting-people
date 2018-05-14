@@ -357,23 +357,44 @@ header .fa-ellipsis-v {
 }
 
 .modal-success .modal-content {
+  width: 35em;
+  height: 20em;
   border-radius: 1.25em;
 }
 
-.modal-success h5 {
+.modal-success .modal-content h5 {
   margin-top: 1em;
   margin-bottom: 1em;
   font-weight: normal;
 }
 
-.modal-success .circle-check {
+.modal-success .modal-content .circle-check {
   margin-bottom: 1.2em;
   width: 5em;
   height: 5em;
 }
 
-.modal-success .modal-mail {
+.modal-success .modal-content .modal-mail {
   background-color: #ECF5FA;
+  width: 29em;
+  padding-top: 0.75em;
+  padding-bottom: 0.2em;
+  margin-left: 2.3em;
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+.modal-success .modal-content .modal-mail span {
+  font-weight: 500;
+}
+
+.modal-success .modal-content .modal-button {
+  border-radius: 0.5em;
+  background-color: #0079C8;
+  color: #fff;
+  width: 8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 body {
