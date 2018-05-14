@@ -10,6 +10,10 @@ body {
     overflow-y: hidden;
 }
 
+.no-padding{
+    padding: 0 !important;
+}
+
 .button {
     @include button;
 }
@@ -21,13 +25,12 @@ body {
     display: inherit;
 }
 
-
 // Componentes
 
-@import './components/tables.scss';
-@import './components/acordeon.scss';
+@import './components/tables-index.scss';
+@import './components/tables-exam.scss';
+@import './components/accordion.scss';
 @import './components/container-box.scss';
 @import 'components/header.scss';
 @import 'components/sidebar.scss';
 @import 'components/info-patients.scss';
-/* * * ELEMENTOS BÁSICOS HTML * * */
