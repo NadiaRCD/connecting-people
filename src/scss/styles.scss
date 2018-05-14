@@ -4,19 +4,19 @@
 @import 'mediaqueries.scss';
 @import 'fonts.scss';
 
-@import 'components/header.scss';
-@import 'components/sidebar.scss';
-@import 'components/info-patients.scss';
-
-
 body {
+    background-color: #fff;
+    font-family: 'Montserrat' !important;
     overflow-y: hidden;
+}
+
+.no-padding{
+    padding: 0 !important;
 }
 
 .button {
     @include button;
 }
-
 
 .fix-margin {
     margin-right: 0!important;
@@ -25,5 +25,12 @@ body {
     display: inherit;
 }
 
+// Componentes
 
-/* * * ELEMENTOS BÁSICOS HTML * * */
+@import './components/tables-index.scss';
+@import './components/tables-exam.scss';
+@import './components/accordion.scss';
+@import './components/container-box.scss';
+@import 'components/header.scss';
+@import 'components/sidebar.scss';
+@import 'components/info-patients.scss';

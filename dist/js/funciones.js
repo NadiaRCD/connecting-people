@@ -8,3 +8,41 @@ $("li[class^='list-button']").click(function() {
     $('.sidebar_background').removeClass('active')
 })
 
+/* Acordeon */
+
+$('.accordion').on('click','.active-accordion-orders',function(){
+    var t = $(this);
+    $('.accordion-header').removeClass('active-accordion-order')
+    t.addClass('active-accordion-order')
+      var tp = t.next();
+      var p = t.parent().siblings().find('.accordion-body-orders');
+      tp.slideToggle();
+    p.slideUp();
+  });
+
+  $('.accordion_exam').on('click','.accordion-header-exam',function(){
+    var t = $(this);
+    $('.accordion-header-exam').removeClass('active-accordion-exam')
+    t.addClass('active-accordion-exam')
+      var tp = t.next();
+      var p = t.parent().siblings().find('.accordion-body-exam');
+      tp.slideToggle();
+    p.slideUp();
+  });
+
+
+/* Tabs */
+
+$('.tab-button_todo').click(function() {
+    $('.container-inner_todo').show()
+    $('.container-inner_ready').hide()
+    $('.tab-button_todo').addClass('active-tab')
+    $('.tab-button_ready').removeClass('active-tab')
+})
+
+$('.tab-button_ready').click(function() {
+    $('.container-inner_todo').hide()
+    $('.container-inner_ready').show()
+    $('.tab-button_todo').removeClass('active-tab')
+    $('.tab-button_ready').addClass('active-tab')
+})
