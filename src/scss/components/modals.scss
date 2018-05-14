@@ -1,4 +1,4 @@
-.modal-success {
+#modal-success {
     text-align: center;
     .modal-content {
         width: 35em;
@@ -19,7 +19,6 @@
             width: 29em;
             padding-top: 0.75em;
             padding-bottom: 0.2em;
-            margin-left: 2.3em;
             margin-bottom: 1em;
             font-weight: 300;
             span {
@@ -35,4 +34,29 @@
             padding-bottom: 0.5em;
         }
     }  
+}
+
+#modal-indications {
+    .modal-lg {
+        max-width: 75em!important;
+    }
+    .modal-content {
+        border-radius: 1.25em;
+        padding: 1em;
+        h5 {
+            color: $brand-blue_dark;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 2em;
+            span {
+                font-weight: 400;
+            }
+        }
+        .progress-step {
+            .progress-text {
+                font-size: 14px;
+                color: $gray_typo;
+            }
+        }
+    }   
 }

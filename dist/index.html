@@ -13,46 +13,46 @@
     <header> 
       <nav class="header-navbar navbar navbar-expand-lg navbar-light">
         <!-- Componente boton hamburguesa-->
-        <button class="header-button_burger"><i class="fas fa-bars"> </i></button><img class="img-brand" src="assets/imgs/brand-bupa.png" alt="img-brand"/>
+        <button class="header-button_burger"><img src="assets/icons/icon-menu.svg" alt=""/></button><img class="img-brand" src="assets/imgs/brand-bupa.png" alt="img-brand"/>
         <h1 class="navbar-title">Connecting People</h1>
         <!-- Componente informacion y foto usuario--><img class="user-img" src="assets/imgs/user.png" alt="img-brand"/>
         <div>
           <p class="user user-name">Nicole Nazar Herrera</p>
           <p class="user user-info">Integramedica Manquehue</p>
         </div>
-        <!-- Componente notificaciones--><i class="fas fa-bell"></i>
-        <!-- Componente menu-user--><i class="fas fa-ellipsis-v"></i>
+        <!-- Componente notificaciones--><img class="icon-notifications" src="assets/icons/icon-notificaciones.svg" alt=""/>
+        <!-- Componente menu-user--><img class="icon-menu-barra" src="assets/icons/icon-menu-barra.svg" alt=""/>
       </nav>
     </header>
     <div class="row fix-margin">
       <div class="col-3 no-padding display-content fix width">
         <nav class="sidebar_background">
           <ul class="sidebar-list-button">
-            <li class="buttons-sidebar_home"><a class="sidebar-button-home" href="#"><i class="fas fa-home sidebar-icon"></i></a>
+            <li class="buttons-sidebar_home"><a class="sidebar-button-home" href="#"><img class="sidebar-icon" src="assets/icons/icon-home.svg" alt=""/></a>
               <p class="text-home">Inicio</p>
             </li>
-            <li class="buttons-sidebar_patients"><a class="sidebar-button-home" href="#"><i class="fas fa-users sidebar-icon"></i></a>
+            <li class="buttons-sidebar_patients"><a class="sidebar-button-home" href="#"><img class="sidebar-icon" src="assets/icons/icon-asignados-white.svg" alt=""/></a>
               <p class="text-patients">Pacientes</p>
             </li>
-            <li class="buttons-sidebar_promotions"><a class="sidebar-button-home" href="#"><i class="fas fa-star sidebar-icon"></i></a>
+            <li class="buttons-sidebar_promotions"><a class="sidebar-button-home" href="#"><img class="sidebar-icon" src="assets/icons/icon-promociones.svg" alt=""/></a>
               <p class="text-promotions">Promociones</p>
             </li>
           </ul>
         </nav>
-        <div class="info-patients"><a href="#"><i class="fas fa-chevron-left"></i></a><i class="fas fa-user-circle"></i><a href="#"><i class="fas fa-chevron-right"></i></a>
+        <div class="info-patients"><a href="#"><img class="icon-arrow-left" src="assets/icons/icon-arrow-left-blue.svg" alt=""/></a><img class="icon-woman" src="assets/icons/icon-woman.svg" alt=""/><a href="#"><img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></a>
           <div class="patients-data">
             <h5 class="patients-name">Francisca Andrea Velasco Ferrada</h5>
             <p class="patients-genre-age">M | 30 años, 2 meses y 8 días</p>
-            <p class="patients-contact">francisca.v@gmail.com</p>
+            <p class="patients-contact patients-mail">francisca.v@gmail.com</p>
             <p class="patients-contact">+569 6222 4567</p>
             <p class="patients-rut">RUT:  16.456.789-0</p>
             <p class="patients-prevision">Previsión: Isapre Cruz Blanca</p>
             <p class="datos-paciente">Datos paciente</p>
           </div>
-          <button class="patients-buttons">Nueva reserva de hora<i class="fas fa-chevron-right"></i></button>
-          <button class="patients-buttons">Reservar por hora y precio<i class="fas fa-chevron-right"></i></button>
-          <button class="patients-buttons">Editar datos del paciente<i class="fas fa-chevron-right"></i></button>
-          <button class="patients-buttons">Reenviar e-mail agendar<i class="fas fa-chevron-right"></i></button>
+          <button class="patients-buttons">Nueva reserva de hora<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
+          <button class="patients-buttons">Reservar por hora y precio<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
+          <button class="patients-buttons">Editar datos del paciente<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
+          <button class="patients-buttons">Reenviar e-mail agendar<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
           <div class="margin-last-button">
             <div class="patients-state"><i class="fas fa-toggle-on"></i>
               <p>Llamar en otro momento</p>
@@ -88,7 +88,7 @@
                 <div class="accordion-body accordion-body-orders">
                   <div class="accordion_exam">
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -123,7 +123,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -158,7 +158,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -200,7 +200,7 @@
                 <div class="accordion-body accordion-body-orders">
                   <div class="accordion_exam">
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -235,7 +235,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -270,7 +270,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -312,7 +312,7 @@
                 <div class="accordion-body accordion-body-orders">
                   <div class="accordion_exam">
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -347,7 +347,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -382,7 +382,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -428,7 +428,7 @@
                 <div class="accordion-body accordion-body-orders">
                   <div class="accordion_exam">
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -463,7 +463,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -498,7 +498,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -540,7 +540,7 @@
                 <div class="accordion-body accordion-body-orders">
                   <div class="accordion_exam">
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -575,7 +575,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -610,7 +610,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -652,7 +652,7 @@
                 <div class="accordion-body accordion-body-orders">
                   <div class="accordion_exam">
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Exámen de laboratorio de sangre</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -687,7 +687,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Endoscopia digestiva gastroscópica de mitad superior</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -722,7 +722,7 @@
                       </div>
                     </div>
                     <div class="accordion-item-exam">
-                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle">Leer indicaciones</span></div>
+                      <div class="accordion-header-exam"><span class="accordion-exam-title">Resonancia magnética espalda</span><span class="accordion-exam-subtitle" data-toggle="modal" data-target="#modal-indications">Leer indicaciones</span></div>
                       <div class="accordion-body-exam">
                         <table>
                           <thead>
@@ -762,8 +762,8 @@
             </div>
           </div>
         </div>
-        <div class="modal modal-success" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
+        <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-body">
                 <h5>La hora fue agendada con éxito</h5><img class="circle-check" src="assets/imgs/Check_Circle.svg.png" alt="circle-check"/>
@@ -771,6 +771,26 @@
                   <p>La cita ha sido enviada al e-mail <span>francisca.v@gmail.com</span></p>
                 </div>
                 <button class="modal-button" type="button" data-dismiss="modal" aria-label="Close">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-indications" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5>Indicaciones / <span>Leer todas las indicaciones                </span></h5>
+                <div class="lists-indications">
+                  <ul class="progress-tracker progress-tracker--vertical">
+                    <li class="progress-step is-complete"><span class="progress-marker">1</span><span class="progress-text">El examen se realiza en unos 15-30 minutos, aunque puede llevar más tiempo dependiendo de los hallazgos que se encuentre, o de si si se lleva a cabo álgun procedimiento terapéutico o toma de biopsias.</span></li>
+                    <li class="progress-step is-complete"><span class="progress-marker">2</span><span class="progress-text">El examen se puede hacer de forma ambulatoria.</span></li>
+                    <li class="progress-step is-complete"><span class="progress-marker">3</span><span class="progress-text">Se suele administrar un sedante para estar tranquilo durante la prueba, por lo que es recomendable que le acompañe alguien para llevarle luego a casa.</span></li>
+                    <li class="progress-step is-complete"><span class="progress-marker">4</span><span class="progress-text">No se requiere ninguna medicación especial.</span></li>
+                    <li class="progress-step is-complete"><span class="progress-marker">5</span><span class="progress-text">Es necesario permanecer sin ingerir agua ni alimentos durante 6-8 horas previas a la prueba. Esto facilita la exploración del intestino. Además, disminuye la posibilidad de vomitar con el consiguiente riesgo de que el vómito entre por la vía respiratoria y de problemas pulmonares graves. En caso de que se haga una endoscopia urgente (principalmente en casos de hemorragias digestivas importantes) se suele colocar previamente una sonda por la nariz hasta el estómago (una sonda nasogástrica), que vaciará el estómago de restos de comida.</span></li>
+                    <li class="progress-step is-complete"><span class="progress-marker">6</span><span class="progress-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam corporis, vero similique id suscipit blanditiis accusantium doloremque sint quam dolore nobis harum doloribus modi quas facilis aspernatur tempora quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla sit porro consectetur illo accusamus expedita recusandae fugiat nisi. Officiis iusto enim quas vel! Sunt corporis similique neque possimus natus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum porro libero molestias? Commodi accusamus odit mollitia similique sit debitis ducimus eum soluta cumque non error aliquam, repellendus itaque iusto beatae?</span></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
