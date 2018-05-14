@@ -17,8 +17,14 @@ html(lang='en')
       .col-3.no-padding.display-content.fix.width
         include ../components/sidebar
         include ../components/info-patients
+
       .col-9.no-padding
         include ../components/container-box
+
+        - var emailPatients = "francisca.v@gmail.com"
+        include ../components/modal-success
+
+      
           
     script(src="js/libs/jquery-3.3.1.min.js")
     script(src="js/libs/bootstrap.min.js")

@@ -4,6 +4,7 @@
 @import 'mediaqueries.scss';
 @import 'fonts.scss';
 
+
 body {
     background-color: #fff;
     font-family: 'Montserrat' !important;
@@ -36,3 +37,4 @@ body {
 @import 'components/header.scss';
 @import 'components/sidebar.scss';
 @import 'components/info-patients.scss';
+@import 'components/modals.scss';

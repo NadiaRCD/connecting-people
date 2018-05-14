@@ -23,7 +23,7 @@
         text-align: center;
     }
     .patients-name {
-        color: $brand-blue_main;
+        color: $blue_typo;
         font-size: 1em;
     }
     .patients-genre-age {
@@ -51,14 +51,15 @@
     }
     .patients-buttons {
         @include button;
-        font-size: 0.75em;
+        font-size: 12px;
         width: 200px;
         height: 30px;
-        border: solid 1px $brand-blue_main;
+        border: solid 1px $blue_typo;
         margin-left: 2em;
         margin-bottom: 0.6em;
         text-align: left;
-        color: $brand-blue_main;
+        color: $blue_typo;
+        font-weight: 500;
         .fas{
             font-size: 1em;
             margin-top: 0.2em;
@@ -105,7 +106,7 @@
             font-weight: 300;
         }
         .doctor {
-            color: $brand-blue_main;
+            color: $blue_typo;
             margin-left: 1.4em;
             margin-bottom: 0;
             font-weight: 500;

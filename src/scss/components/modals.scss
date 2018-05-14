@@ -1,0 +1,38 @@
+.modal-success {
+    text-align: center;
+    .modal-content {
+        width: 35em;
+        height: 20em;
+        border-radius: 1.25em;
+        h5 {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-weight: normal;
+        }
+        .circle-check {
+            margin-bottom: 1.2em;
+            width: 5em;
+            height: 5em;
+        }
+        .modal-mail {
+            background-color: $brand-blue_ligth;
+            width: 29em;
+            padding-top: 0.75em;
+            padding-bottom: 0.2em;
+            margin-left: 2.3em;
+            margin-bottom: 1em;
+            font-weight: 300;
+            span {
+                font-weight: 500;
+            }
+        }
+        .modal-button {
+            border-radius: 0.5em;
+            background-color: $brand-blue_main;
+            color: #fff;
+            width: 8em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+    }  
+}

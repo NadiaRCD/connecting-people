@@ -357,7 +357,6 @@ header .fa-ellipsis-v {
   -webkit-transition: 1s;
   transition: 1s;
   margin-right: 0.6em;
-  z-index: 2;
 }
 
 .sidebar_background .sidebar-list-button {
@@ -387,6 +386,7 @@ header .fa-ellipsis-v {
 
 /* clase disparada js */
 .active {
+  z-index: 2;
   width: 15em;
 }
 
@@ -421,7 +421,7 @@ header .fa-ellipsis-v {
 }
 
 .info-patients .patients-name {
-  color: #0079C8;
+  color: #0092DA;
   font-size: 1em;
 }
 
@@ -455,14 +455,15 @@ header .fa-ellipsis-v {
 
 .info-patients .patients-buttons {
   border-radius: 0.3em;
-  font-size: 0.75em;
+  font-size: 12px;
   width: 200px;
   height: 30px;
-  border: solid 1px #0079C8;
+  border: solid 1px #0092DA;
   margin-left: 2em;
   margin-bottom: 0.6em;
   text-align: left;
-  color: #0079C8;
+  color: #0092DA;
+  font-weight: 500;
 }
 
 .info-patients .patients-buttons .fas {
@@ -502,7 +503,7 @@ header .fa-ellipsis-v {
 .info-patients .ultima-consulta .patients-background_grey {
   text-align: left;
   margin-left: 0.75em;
-  background-color: #c0cdd6;
+  background-color: #E8EEF2;
   width: 20em;
   padding-top: 0.5em;
   padding-bottom: 0.2em;
@@ -522,7 +523,7 @@ header .fa-ellipsis-v {
 }
 
 .info-patients .ultima-consulta .doctor {
-  color: #0079C8;
+  color: #0092DA;
   margin-left: 1.4em;
   margin-bottom: 0;
   font-weight: 500;
@@ -533,3 +534,67 @@ header .fa-ellipsis-v {
   font-weight: 300;
   margin-left: 1.4em;
 }
+
+.modal-success {
+  text-align: center;
+}
+
+.modal-success .modal-content {
+  width: 35em;
+  height: 20em;
+  border-radius: 1.25em;
+}
+
+.modal-success .modal-content h5 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
+.modal-success .modal-content .circle-check {
+  margin-bottom: 1.2em;
+  width: 5em;
+  height: 5em;
+}
+
+.modal-success .modal-content .modal-mail {
+  background-color: #ECF5FA;
+  width: 29em;
+  padding-top: 0.75em;
+  padding-bottom: 0.2em;
+  margin-left: 2.3em;
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+.modal-success .modal-content .modal-mail span {
+  font-weight: 500;
+}
+
+.modal-success .modal-content .modal-button {
+  border-radius: 0.5em;
+  background-color: #0079C8;
+  color: #fff;
+  width: 8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.button {
+  border-radius: 0.3em;
+}
+
+.fix-margin {
+  margin-right: 0 !important;
+}
+
+.display-content {
+  display: inherit;
+}
+
+/* * * ELEMENTOS BÁSICOS HTML * * */
+
