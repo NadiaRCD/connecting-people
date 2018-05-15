@@ -17,7 +17,8 @@ $('.accordion').on('click','.accordion-header-orders',function(){
       var tp = t.next();
       var p = t.parent().siblings().find('.accordion-body-orders');
       tp.slideToggle();
-    p.slideUp();
+		p.slideUp();
+    $('.open-accordion').addClass('rotate')
   });
 
   $('.accordion_exam').on('click','.accordion-header-exam',function(){
@@ -28,7 +29,6 @@ $('.accordion').on('click','.accordion-header-orders',function(){
       var p = t.parent().siblings().find('.accordion-body-exam');
       tp.slideToggle();
     p.slideUp();
-    $('.open-accordion').addClass('rotate')
   });
 
 
@@ -49,3 +49,5 @@ $('.tab-button_ready').click(function() {
 })
 
 /* Sort table */
+
+$("#table-sort").stupidtable();

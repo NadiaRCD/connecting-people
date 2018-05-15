@@ -7,14 +7,40 @@ table{
     font-weight: 500;
     padding: 1em 1.2em;
 
-    .icon_up{
+    .icon{
       width: 10px;
       position: absolute;
-      margin: 0 0.7em;
+      margin: 0 1em;
+
+      &_up{
+        @extend .icon;
+        top: 63px;
+      }
+      &_down{
+        @extend .icon;
+        top: 73px;
+      }
     }
-    .icon_down{
-      @extend .icon_up;
-      top: 75px;
-    }
+  }
+}
+
+/* TEST */
+
+
+.table-sort {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  th {
+    cursor: pointer;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2
   }
 }

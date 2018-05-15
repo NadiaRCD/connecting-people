@@ -6,30 +6,75 @@ table{
     color: $gray_typo;
     font-size: 12px;
     font-weight: 500;
-    padding: .5em;
+    padding: 1em;
+    position: relative;
+
+    .icon{
+      width: 10px;
+      position: absolute;
+      margin: 0 1em;
+
+      &_up{
+        @extend .icon;
+        top: 8px;
+      }
+      &_down{
+        @extend .icon;
+        top: 18px;
+      }
+    }
   }
 
   .table-body{
     font-size: 12px;
     tr{
       border-bottom: 1px solid #f0f0f0;
-      .table-typo-light_blue_link{
-        font-weight: 300;
-        color: $brand-blue_link;
-        display: block;
-        padding: 0 0 1em 1em;
-      }
-      .table-typo-light_blue_dark{
-        font-weight: 300;
-        color: $brand-blue_dark;
-        display: block;   
-        padding: 0 0 1em 1em;   
-      }
-      .table-typo_strong{
-        font-weight: 500;
-        color: $brand-blue_dark;
-        display: block;
-        padding: 1em;
+      td{
+        position: relative;
+
+        .table-typo-light_blue_link{
+          font-weight: 300;
+          color: $brand-blue_main;
+          display: block;
+          padding: 0 0 1em 1em;
+        }
+        .table-typo-light_blue_dark{
+          font-weight: 300;
+          color: $brand-blue_dark;
+          display: block;   
+          padding: 0 0 1em 1em;   
+        }
+        .table-typo_strong{
+          font-weight: 500;
+          color: $brand-blue_dark;
+          display: block;
+          padding: 1em;
+        }
+
+        .icon{
+          position: absolute;
+          &_location{
+            @extend .icon;
+            top: 2.5em;
+            right: 14.5em;
+          }
+          &_mail{
+            @extend .icon;
+            top: 1em;
+            left: -2.7em;
+          }
+          &_woman{
+            @extend .icon;
+            width: 2em;
+            left: -1.7em;
+          }
+        }
+        .fa-ellipsis-v{
+          @extend .icon;
+          font-size: 1.5em;
+          right: 1.5em;
+          color: $brand-blue_main;
+        }
       }
     }
   }

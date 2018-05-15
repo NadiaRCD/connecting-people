@@ -114,14 +114,38 @@ table .table-header-order {
   padding: 1em 1.2em;
 }
 
-table .table-header-order .icon_up, table .table-header-order .icon_down {
+table .table-header-order .icon, table .table-header-order .icon_up, table .table-header-order .icon_down, table .table-header-order .table-body tr td .icon_location, table .table-body tr td .table-header-order .icon_location, table .table-header-order .table-body tr td .icon_mail, table .table-body tr td .table-header-order .icon_mail, table .table-header-order .table-body tr td .icon_woman, table .table-body tr td .table-header-order .icon_woman, table .table-header-order .table-body tr td .fa-ellipsis-v, table .table-body tr td .table-header-order .fa-ellipsis-v {
   width: 10px;
   position: absolute;
-  margin: 0 0.7em;
+  margin: 0 1em;
+}
+
+table .table-header-order .icon_up {
+  top: 63px;
 }
 
 table .table-header-order .icon_down {
-  top: 75px;
+  top: 73px;
+}
+
+/* TEST */
+.table-sort {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.table-sort th {
+  cursor: pointer;
+}
+
+.table-sort th, .table-sort td {
+  text-align: left;
+  padding: 16px;
+}
+
+.table-sort tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 table {
@@ -133,7 +157,22 @@ table .table-header {
   color: #6C6E71;
   font-size: 12px;
   font-weight: 500;
-  padding: .5em;
+  padding: 1em;
+  position: relative;
+}
+
+table .table-header .icon, table .table-header .icon_up, table .table-header .icon_down, table .table-header .table-body tr td .icon_location, table .table-body tr td .table-header .icon_location, table .table-header .table-body tr td .icon_mail, table .table-body tr td .table-header .icon_mail, table .table-header .table-body tr td .icon_woman, table .table-body tr td .table-header .icon_woman, table .table-header .table-body tr td .fa-ellipsis-v, table .table-body tr td .table-header .fa-ellipsis-v {
+  width: 10px;
+  position: absolute;
+  margin: 0 1em;
+}
+
+table .table-header .icon_up {
+  top: 8px;
+}
+
+table .table-header .icon_down {
+  top: 18px;
 }
 
 table .table-body {
@@ -144,25 +183,54 @@ table .table-body tr {
   border-bottom: 1px solid #f0f0f0;
 }
 
-table .table-body tr .table-typo-light_blue_link {
+table .table-body tr td {
+  position: relative;
+}
+
+table .table-body tr td .table-typo-light_blue_link {
   font-weight: 300;
-  color: #0093ff;
+  color: #0079C8;
   display: block;
   padding: 0 0 1em 1em;
 }
 
-table .table-body tr .table-typo-light_blue_dark {
+table .table-body tr td .table-typo-light_blue_dark {
   font-weight: 300;
   color: #05345C !important;
   display: block;
   padding: 0 0 1em 1em;
 }
 
-table .table-body tr .table-typo_strong {
+table .table-body tr td .table-typo_strong {
   font-weight: 500;
   color: #05345C !important;
   display: block;
   padding: 1em;
+}
+
+table .table-body tr td .icon, table .table-body tr td .table-header-order .icon_up, table .table-header-order .table-body tr td .icon_up, table .table-body tr td .table-header-order .icon_down, table .table-header-order .table-body tr td .icon_down, table .table-body tr td .table-header .icon_up, table .table-header .table-body tr td .icon_up, table .table-body tr td .table-header .icon_down, table .table-header .table-body tr td .icon_down, table .table-body tr td .icon_location, table .table-body tr td .icon_mail, table .table-body tr td .icon_woman, table .table-body tr td .fa-ellipsis-v {
+  position: absolute;
+}
+
+table .table-body tr td .icon_location {
+  top: 2.5em;
+  right: 14.5em;
+}
+
+table .table-body tr td .icon_mail {
+  top: 1em;
+  left: -2.7em;
+}
+
+table .table-body tr td .icon_woman {
+  width: 2em;
+  left: -1.7em;
+}
+
+table .table-body tr td .fa-ellipsis-v {
+  font-size: 1.5em;
+  right: 1.5em;
+  color: #0079C8;
 }
 
 /* Acordeon examenes (interno) */
@@ -178,6 +246,7 @@ table .table-body tr .table-typo_strong {
 .accordion_exam .accordion-item-exam .accordion-header-exam, .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-title, .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-subtitle {
   font-size: 14px;
   padding: 1em .5em;
+  position: relative;
 }
 
 .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-title {
@@ -188,7 +257,19 @@ table .table-body tr .table-typo_strong {
 .accordion_exam .accordion-item-exam .accordion-header-exam .accordion-exam-subtitle {
   color: #0079C8;
   font-weight: 300;
-  padding-left: 2em;
+  padding-left: 1em;
+}
+
+.accordion_exam .accordion-item-exam .accordion-header-exam .icon_mail {
+  position: absolute;
+  right: 1.5em;
+  top: 1.2em;
+}
+
+.accordion_exam .accordion-item-exam .accordion-header-exam .icon_search {
+  position: absolute;
+  right: 4.5em;
+  top: 1em;
 }
 
 .accordion_exam .accordion-item-exam .accordion-body-exam {
@@ -225,7 +306,7 @@ table .table-body tr .table-typo_strong {
 .accordion .accordion-item .accordion-header-orders .open-accordion {
   width: 1em;
   position: absolute;
-  right: 3em;
+  right: 1.5em;
   top: 1.5em;
 }
 

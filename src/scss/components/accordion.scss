@@ -8,6 +8,7 @@
     .accordion-header-exam {
       font-size: 14px;
       padding: 1em .5em;
+      position: relative;
       .accordion-exam-title{
         @extend .accordion-header-exam;
         color: $brand-blue_dark;
@@ -17,7 +18,17 @@
         @extend .accordion-header-exam;
         color: $brand-blue_main;
         font-weight: 300;
-        padding-left: 2em;
+        padding-left: 1em;
+      }
+      .icon_mail{
+        position: absolute;
+        right: 1.5em;
+        top: 1.2em;
+      }
+      .icon_search{
+        position: absolute;
+        right: 4.5em;
+        top: 1em;
       }
     }
     .accordion-body-exam {
@@ -61,7 +72,7 @@
       .open-accordion{
         width: 1em;
         position: absolute;
-        right: 3em;
+        right: 1.5em;
         top: 1.5em;
       }
     }
