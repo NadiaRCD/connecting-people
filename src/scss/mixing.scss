@@ -1,3 +1,23 @@
 @mixin button {
     border-radius: 0.3em;
 }
+
+@mixin buttons-patients {
+    border-radius: 0.3em;
+    font-size: 12px;
+    width: 200px;
+    height: 30px;
+    border: solid 1px $brand-blue_main;
+    background-color: #fff;
+    margin-left: 2em;
+    margin-bottom: 0.6em;
+    text-align: left;
+    color: $brand-blue_main;
+    font-weight: 600;
+    .icon-arrow-right{
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+        float: right;
+    }
+}

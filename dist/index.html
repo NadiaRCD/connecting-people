@@ -10,19 +10,34 @@
     <title>Connecting People</title>
   </head>
   <body>
-    <header> 
-      <nav class="header-navbar navbar navbar-expand-lg navbar-light">
-        <!-- Componente boton hamburguesa-->
-        <button class="header-button_burger"><img src="assets/icons/icon-menu.svg" alt=""/></button><img class="img-brand" src="assets/imgs/brand-bupa.png" alt="img-brand"/>
-        <h1 class="navbar-title">Connecting People</h1>
-        <!-- Componente informacion y foto usuario--><img class="user-img" src="assets/imgs/user.png" alt="img-brand"/>
-        <div>
-          <p class="user user-name">Nicole Nazar Herrera</p>
-          <p class="user user-info">Integramedica Manquehue</p>
+    <header>
+      <div class="row fix-margin">
+        <div class="col-12 no-padding">
+          <nav class="header-navbar navbar navbar-expand-lg navbar-light">
+            <div class="col-6">
+              <div class="header-brand">
+                <!-- Componente boton hamburguesa-->
+                <button class="header-button_burger"><img src="assets/icons/icon-menu.svg" alt=""/></button><img class="img-brand" src="assets/imgs/brand-bupa.png" alt="img-brand"/>
+                <h1 class="navbar-title">Connecting People</h1>
+                <button class="patients-buttons" data-toggle="modal" data-target="#modal-success"></button>
+              </div>
+            </div>
+            <div class="col-6 text-right">
+              <div class="header-user">
+                <!-- Componente informacion y foto usuario-->
+                <div class="user-info"><img class="user-img" src="assets/imgs/user.png" alt="img-brand"/>
+                  <div class="user-info_text text-left">
+                    <p class="user user-name">Nicole Nazar Herrera</p>
+                    <p class="user user-place">Integramedica Manquehue</p>
+                  </div>
+                </div>
+                <!-- Componente notificaciones--><img class="icon-notifications" src="assets/icons/icon-notificaciones.svg" alt=""/>
+                <!-- Componente menu-user--><img class="icon-menu-barra" src="assets/icons/icon-menu-barra.svg" alt=""/>
+              </div>
+            </div>
+          </nav>
         </div>
-        <!-- Componente notificaciones--><img class="icon-notifications" src="assets/icons/icon-notificaciones.svg" alt=""/>
-        <!-- Componente menu-user--><img class="icon-menu-barra" src="assets/icons/icon-menu-barra.svg" alt=""/>
-      </nav>
+      </div>
     </header>
     <div class="row fix-margin">
       <div class="col-3 no-padding display-content fix width">
@@ -39,7 +54,7 @@
             </li>
           </ul>
         </nav>
-        <div class="info-patients"><a href="#"><img class="icon-arrow-left" src="assets/icons/icon-arrow-left-blue.svg" alt=""/></a><img class="icon-woman" src="assets/icons/icon-woman.svg" alt=""/><a href="#"><img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></a>
+        <div class="info-patients"><a href="#"><img class="icon-arrow-left" src="assets/icons/icon-arrow-left-grey.svg" alt=""/></a><img class="icon-woman" src="assets/icons/icon-woman.svg" alt=""/><a href="#"><img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></a>
           <div class="patients-data">
             <h5 class="patients-name">Francisca Andrea Velasco Ferrada</h5>
             <p class="patients-genre-age">M | 30 años, 2 meses y 8 días</p>
@@ -49,10 +64,10 @@
             <p class="patients-prevision">Previsión: Isapre Cruz Blanca</p>
             <p class="datos-paciente">Datos paciente</p>
           </div>
-          <button class="patients-buttons">Nueva reserva de hora<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
-          <button class="patients-buttons">Reservar por hora y precio<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
-          <button class="patients-buttons">Editar datos del paciente<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
-          <button class="patients-buttons">Reenviar e-mail agendar<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
+          <button class="patients-buttons" data-toggle="modal" data-target="#modal-success">Nueva reserva de hora<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
+          <button class="patients-buttons" data-toggle="modal" data-target="#modal-success">Reservar por hora y precio<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
+          <button class="patients-buttons" data-toggle="modal" data-target="#modal-success">Editar datos del paciente<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
+          <button class="patients-buttons" data-toggle="modal" data-target="#modal-success">Reenviar e-mail agendar<img class="icon-arrow-right" src="assets/icons/icon-arrow-right-blue.svg" alt=""/></button>
           <div class="margin-last-button">
             <div class="patients-state"><i class="fas fa-toggle-on"></i>
               <p>Llamar en otro momento</p>
@@ -79,7 +94,7 @@
           </div>
         </div>
       </div>
-      <div class="col-9 no-padding">
+      <div class="col-lg-9 no-padding">
         <div class="container-box"><a class="tab-button_todo active-tab" href="#"><span>Por agendar</span></a><a class="tab-button_ready" href="#"><span>Lo agendado</span></a>
           <div class="container-inner_todo">
             <div class="accordion">

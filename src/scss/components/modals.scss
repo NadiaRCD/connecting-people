@@ -2,11 +2,13 @@
     text-align: center;
     .modal-content {
         width: 35em;
-        height: 20em;
+        height: 20.3em;
         border-radius: 1.25em;
+        padding-left: 1.7em;
+        padding-right: 2.6em;
+        padding-bottom: 2.5em;
         h5 {
-            margin-top: 1em;
-            margin-bottom: 1em;
+            margin-top: 1.5em;
             font-weight: normal;
         }
         .circle-check {
@@ -26,16 +28,16 @@
             }
         }
         .modal-button {
+            font-size: 14px;
             border-radius: 0.5em;
             background-color: $brand-blue_main;
             color: #fff;
             width: 8em;
             padding-top: 0.5em;
-            padding-bottom: 0.5em;
+            padding-bottom: 0.5em;  
         }
     }  
 }
-
 #modal-indications {
     .modal-lg {
         max-width: 75em!important;
@@ -43,20 +45,30 @@
     .modal-content {
         border-radius: 1.25em;
         padding: 1em;
-        h5 {
-            color: $brand-blue_dark;
-            font-weight: 600;
-            font-size: 24px;
-            margin-bottom: 2em;
-            span {
+        padding-top: 1.2em;
+        .modal-body {
+            padding-top: 0;
+            h5 {
+                padding-top: 0.5em;
+                color: $brand-blue_dark;
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 2em;
+                span {
+                    font-weight: 400;
+                }
+            }
+            .close {
                 font-weight: 400;
+                font-size: 32px;
             }
-        }
-        .progress-step {
-            .progress-text {
-                font-size: 14px;
-                color: $gray_typo;
+            .progress-step {
+                .progress-text {
+                    padding-right: 9em;
+                    font-size: 14px;
+                    color: $gray_typo;
+                }
             }
-        }
+        }  
     }   
 }

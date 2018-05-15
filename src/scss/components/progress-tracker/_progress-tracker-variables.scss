@@ -11,7 +11,7 @@ $progress-color-grey-dark:  $brand-blue_main !default;
 // Sizing
 $progress-tracker-padding:  5px !default;
 
-$marker-size:               28px !default;
+$marker-size:               25px !default;
 $marker-size-half:          ($marker-size / 2);
 $marker-size-third:         ($marker-size / 3);
 $marker-size-quarter:       ($marker-size / 4);
@@ -21,12 +21,12 @@ $path-height:               1px !default;
 $path-position:             $marker-size-half - ($path-height / 2);
 
 $text-padding:              $marker-size-half !default;
-$text-padding-X:            $marker-size-third !default;
+$text-padding-X:            0 !default;
 $text-padding-Y:            $marker-size-half !default;
 $text-padding--vertical:    $marker-size + $marker-size-half !default;
 
 // Only needed for short text version, the word size should be the width of the widest word without padding.
-$word-size:                     54px !default;
+$word-size:                     14px !default;
 $progress-tracker-word-padding: ($word-size + $text-padding-X + $marker-size-half) / 2;
 
 // Animations/Transitions
