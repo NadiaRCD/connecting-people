@@ -3,11 +3,11 @@
 .accordion_exam {
   background-color: #FFF;
   .accordion-item-exam{
-    border-top: 1px solid $brand-blue_link;
+    border-top: 1px solid $brand-blue_main;
     cursor: pointer;
     .accordion-header-exam {
       font-size: 14px;
-      padding: 1em;
+      padding: 1em .5em;
       .accordion-exam-title{
         @extend .accordion-header-exam;
         color: $brand-blue_dark;
@@ -24,7 +24,7 @@
       display: none;
     }
     &:last-child{
-      border-bottom: 1px solid $brand-blue_link;
+      border-bottom: 1px solid $brand-blue_main;
     }
   }
 }
@@ -38,9 +38,10 @@
 
 .accordion{
   .accordion-item{
-    .accordion-header{
+    .accordion-header-orders{
       padding: 1em;
-      background-color: #e0f4f4;
+      position: relative;
+      background-color: #f5fcfc;
       font-size: 14px;
       color: $brand-blue_dark;
       cursor: pointer;
@@ -57,6 +58,12 @@
       .accordion-header-patient{
         @extend .accordion-header-date;
       }
+      .open-accordion{
+        width: 1em;
+        position: absolute;
+        right: 3em;
+        top: 1.5em;
+      }
     }
   }
 }
@@ -64,4 +71,8 @@
 // Clases disparadas por JS
 .active-accordion-order{
   background-color: #bfe0e0 !important;
+}
+
+.rotate{
+  transform: rotate(180deg);
 }
