@@ -4,7 +4,7 @@ $('.header-button_burger').click(function() {
 })
 
 /* cierra el sidebar cuando se selecciona un item */
-$("li[class^='list-button']").click(function() {
+$("li[class^='buttons-sidebar']").click(function() {
     $('.sidebar_background').removeClass('active')
 })
 

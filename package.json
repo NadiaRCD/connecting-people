@@ -18,7 +18,9 @@
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "progress-tracker": "^1.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NadiaRCD/connecting-people.git"

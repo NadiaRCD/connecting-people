@@ -4,12 +4,12 @@
 @import 'mediaqueries.scss';
 @import 'fonts.scss';
 
+
 body {
     background-color: #fff;
     font-family: 'Montserrat' !important;
     overflow-y: hidden;
 }
-
 .no-padding{
     padding: 0 !important;
 }
@@ -24,6 +24,9 @@ body {
 .display-content {
     display: inherit;
 }
+.fix.width {
+    max-width: 23%!important;
+}
 
 // Componentes
 
@@ -34,3 +37,8 @@ body {
 @import 'components/header.scss';
 @import 'components/sidebar.scss';
 @import 'components/info-patients.scss';
+@import 'components/modals.scss';
+
+@import 'components/progress-tracker/_progress-tracker-variables.scss';
+@import 'components/progress-tracker/_progress-tracker.scss';
+

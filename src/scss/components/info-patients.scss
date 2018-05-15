@@ -1,19 +1,17 @@
 .info-patients {
-    display: inline-block;
+    display: block;
+    position: absolute;
+    margin-left: 4.4em;
     width: 16.45em;
     height: 100%;
     border-right: 1px solid $gray_disabled;
     padding-top: 0.8em;
     z-index: -1;
-    .fas {
-        font-size: 1.5em;
-        color: $gray_typo;
+    .icon-arrow-left {
+        margin-left: 0.6em;
     }
-    .fa-chevron-right {
-        color: $brand-blue_main;
-    }
-    .fa-user-circle {
-        margin-left: 2.2em;
+    .icon-woman {
+        margin-left: 2.0em;
         margin-right: 2.3em;
         font-size: 2.5em;
         color: $purple;
@@ -25,20 +23,26 @@
     .patients-name {
         color: $brand-blue_main;
         font-size: 1em;
+        font-weight: 600;
     }
     .patients-genre-age {
+        margin-top: 0.9em;
         font-size: 0.8em;
         color: $gray_typo;
     }
     .patients-contact {
         margin-bottom: 0;
         color: $purple;
-        font-size: 0.87em;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .patients-mail {
+        font-size: 12px;
     }
     .patients-rut {
         margin-top: 0.4em;
         margin-bottom: 0;
-        font-size: 0.75em;
+        font-size: 12px;
         color: $gray_typo;
     }
     .patients-prevision {
@@ -47,23 +51,10 @@
     }
     .datos-paciente {
         color: $brand-blue_main;
-        font-size: 0.75em;
+        font-size: 11px;
     }
     .patients-buttons {
-        @include button;
-        font-size: 0.75em;
-        width: 200px;
-        height: 30px;
-        border: solid 1px $brand-blue_main;
-        margin-left: 2em;
-        margin-bottom: 0.6em;
-        text-align: left;
-        color: $brand-blue_main;
-        .fas{
-            font-size: 1em;
-            margin-top: 0.2em;
-            float: right;
-        }
+        @include buttons-patients;
     }
     .margin-last-button {
         margin-top: 1.7em;
@@ -75,7 +66,7 @@
         margin-left: 2em;
         margin-bottom: 1em;
         .fas, .far{
-            font-size: 12px;
+            font-size: 18px;
         }
         p{
             margin-bottom: 0;
@@ -92,27 +83,30 @@
             width: 20em;
             padding-top: 0.5em;
             padding-bottom: 0.2em;
-            font-size: 12px;
             color: $brand-blue_dark;
             h6 {
                 margin-left: 0.7em;
+                font-weight: 600;
+                font-size: 12px;
             }
         }
         .date {
             margin-top: 0.4em;
             margin-bottom: 0;
             margin-left: 1.4em;
+            font-size: 11px;
             font-weight: 300;
         }
         .doctor {
-            color: $brand-blue_main;
+            color: $blue_typo;
             margin-left: 1.4em;
             margin-bottom: 0;
-            font-weight: 500;
+            font-weight: 600;
         }
         .especiality {
             color: $gray_typo;
             font-weight: 300;
+            font-size: 11px;
             margin-left: 1.4em;
 
         }
