@@ -5,61 +5,63 @@ header {
         background-color: $brand-blue_main;
         color: #fff;
         padding-left: 0;
-        .header-button_burger {
-            width: 2em;
-            height: 2em;
-            background-color: $brand-blue_main;
-            border: none;
-            color: #fff;
-            font-size: 1.6em;
-            &:focus {
-                outline: none;
+        .header-brand {
+            .header-button_burger {
+                width: 2em;
+                height: 2em;
+                cursor: pointer;
+                background-color: $brand-blue_main;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .img-brand {
+                width: 8em;
+                height: 2.68em;
+                margin-right: 0.5em;
+            }
+            .navbar-title {
+                display: inline-block;
+                font-size: 1.25em;
+                font-family: $font-family;
+                padding-top: 0.4em;
             }
         }
-        
-        .img-brand {
-            width: 8em;
-            height: 2.68em;
-            margin-right: 0.5em;
+        .header-user {
+            display: inline-flex;
+            .user-info {
+                display: inherit;
+                .user-img {
+                    border-radius: 50%;
+                    width: 2.8em;
+                    height: 2.5em;
+                    margin-right: 0.5em;
+                    margin-top: 0.2em;
+                }
+                .user-info_text {
+                    .user {
+                        font-size: 0.75em;
+                        margin: 0;
+                    }
+                    .user-name {
+                        margin-top: 0.5em;
+                        font-weight: bold;
+                    }
+                    .user-place {
+                        font-weight: lighter;
+                    }
+                }
+            }
+            .icon-notifications {
+                cursor: pointer;
+                margin-left: 1.8em;
+            }
+            .icon-menu-barra {
+                cursor: pointer;
+                font-size: 1.2em;
+                margin-left: 2em;
+            }
         }
-        .navbar-title {
-            display: inline-block;
-            font-size: 1.25em;
-            font-family: $font-family;
-            padding-top: 0.4em;
-        }
-
-        .user-img {
-                border-radius: 50%;
-                width: 2.8em;
-                height: 2.5em;
-                margin-right: 0.5em;
-                margin-left: 42em;
-                margin-top: 0.2em;
-        }
-        .user {
-                font-size: 0.75em;
-                margin: 0;
-        }
-        .user-name {
-            margin-top: 0.2em;
-            font-weight: bold;
-        }
-        .user-info {
-            font-weight: lighter;
-        }
-
      }
-    /* componente notifications */
-        .fa-bell {
-            margin-left: 1.8em;
-            font-size: 1.8em;
-        }
-
-    /* component header-menu-user */
-        .fa-ellipsis-v {
-            font-size: 1.2em;
-            margin-left: 2em;
-        }
-
 }

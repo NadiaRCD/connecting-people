@@ -1,13 +1,20 @@
-header  
-    nav.header-navbar.navbar.navbar-expand-lg.navbar-light
-        // Componente boton hamburguesa
-        include ../components/button-burger
-        img.img-brand(src="assets/imgs/brand-bupa.png", alt="img-brand") 
-        h1.navbar-title Connecting People
-        // Componente informacion y foto usuario
-        include ../components/header-navbar-user 
-        // Componente notificaciones
-        include ../components/header-notifications
-        // Componente menu-user
-        include ../components/header-menu-user
+header
+    .row.fix-margin
+        .col-12.no-padding
+            nav.header-navbar.navbar.navbar-expand-lg.navbar-light
+                .col-6
+                    .header-brand
+                        // Componente boton hamburguesa
+                        include ../components/button-burger
+                        img.img-brand(src="assets/imgs/brand-bupa.png", alt="img-brand") 
+                        h1.navbar-title Connecting People
+                        button.patients-buttons(data-toggle="modal" data-target="#modal-success")
+                .col-6.text-right
+                    .header-user
+                        // Componente informacion y foto usuario
+                        include ../components/header-navbar-user 
+                        // Componente notificaciones
+                        include ../components/header-notifications
+                        // Componente menu-user
+                        include ../components/header-menu-user
         
