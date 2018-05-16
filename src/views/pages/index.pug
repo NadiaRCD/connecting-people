@@ -14,15 +14,16 @@ html(lang='en')
     include ../components/header
 
     .row.fix-margin
-      .col-3.no-padding.display-content.fix.width
+      .col-lg-4.col-xl-3.no-padding.display-content
         include ../components/sidebar
         include ../components/info-patients
-      .col-lg-9.no-padding
+      .col-lg-8.col-xl-9.no-padding
         include ../components/container-box 
     
         - var emailPatients = "francisca.v@gmail.com"
         include ../components/modal-success
         include ../components/modal-indications
+        include ../components/modal-notification
      
             
     script(src="js/libs/jquery-3.3.1.min.js")

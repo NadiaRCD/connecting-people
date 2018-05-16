@@ -108,13 +108,6 @@ body {
 
 table .table-header-order {
   background-color: #f2f2f2;
-  
-.fix.width {
-  max-width: 23% !important;
-}
-
-table .table-header {
-  background-color: #F5FFFA;
   color: #6C6E71;
   font-size: 12px;
   font-weight: 500;
@@ -250,7 +243,6 @@ table .table-body tr .table-typo_strong {
   height: 100%;
   background-color: #ECF5FA;
   padding-top: 2.6em;
-  position: relative;
 }
 
 .container-box .tab-button, .container-box .tab-button_todo, .container-box .tab-button_ready {
@@ -381,6 +373,7 @@ header .header-navbar .header-user .icon-menu-barra {
 
 .sidebar_background {
   z-index: 2;
+  position: relative;
   width: 4em;
   padding-left: 0.5em;
   height: 100%;
@@ -426,20 +419,21 @@ header .header-navbar .header-user .icon-menu-barra {
   display: block;
   position: absolute;
   margin-left: 4.4em;
-  width: 16.45em;
+  width: 80%;
+  /* 16.4em */
   height: 100%;
   border-right: 1px solid #CACACA;
-  padding-top: 0.8em;
-  z-index: -1;
+  padding-top: 5%;
+  padding-left: 3%;
 }
 
 .info-patients .icon-arrow-left {
-  margin-left: 0.6em;
+  margin-left: 2%;
 }
 
 .info-patients .icon-woman {
-  margin-left: 2.0em;
-  margin-right: 2.3em;
+  margin-left: 31%;
+  margin-right: 31%;
   font-size: 2.5em;
   color: #755296;
 }
@@ -453,6 +447,7 @@ header .header-navbar .header-user .icon-menu-barra {
   color: #0079C8;
   font-size: 1em;
   font-weight: 600;
+  padding-right: 2%;
 }
 
 .info-patients .patients-genre-age {
@@ -658,6 +653,86 @@ header .header-navbar .header-user .icon-menu-barra {
   padding-right: 9em;
   font-size: 14px;
   color: #6C6E71;
+}
+
+#modal-notification .modal-dialog {
+  width: 20em;
+  height: 14.5em;
+  position: fixed;
+  bottom: -0.9em;
+  right: 1.9em;
+}
+
+#modal-notification .modal-dialog .modal-header {
+  border: none;
+  padding-bottom: 0;
+}
+
+#modal-notification .modal-dialog .modal-header .brand-logo {
+  width: 3em;
+  padding-left: 0.3em;
+}
+
+#modal-notification .modal-dialog .modal-header .title-modal {
+  margin-left: -4em;
+  font-size: 11px;
+}
+
+#modal-notification .modal-dialog .modal-header .title-modal .title-notification {
+  display: inline;
+  font-size: 14px;
+  font-weight: 500;
+  color: #05345C !important;
+}
+
+#modal-notification .modal-dialog .modal-header .modal-hour {
+  font-size: 10px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6C6E71;
+}
+
+#modal-notification .modal-dialog .modal-header .modal-hour .far {
+  margin-right: 0.4em;
+  margin-top: 0.2em;
+  color: #0079C8;
+}
+
+#modal-notification .modal-dialog .modal-body {
+  padding-top: 0;
+}
+
+#modal-notification .modal-dialog .modal-body .modal-promotion {
+  padding-left: 0.9em;
+}
+
+#modal-notification .modal-dialog .modal-body .modal-promotion .title-promotion {
+  font-size: 30px;
+  color: #0079C8;
+  margin-bottom: 0;
+}
+
+#modal-notification .modal-dialog .modal-body .modal-promotion .title-promotion span {
+  font-size: 25px;
+}
+
+#modal-notification .modal-dialog .modal-body .modal-promotion .text-promotion {
+  font-size: 12px;
+  color: #6C6E71;
+  font-weight: 300;
+  margin-top: -2em;
+}
+
+#modal-notification .modal-dialog .modal-body .modal-promotion .text-promotion span {
+  font-weight: 600;
+}
+
+#modal-notification .modal-dialog .modal-body .close {
+  color: #0079C8;
+  opacity: 1 !important;
+  font-weight: 500;
 }
 
 .progress-tracker {

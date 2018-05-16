@@ -38,6 +38,7 @@
         }
     }  
 }
+
 #modal-indications {
     .modal-lg {
         max-width: 75em!important;
@@ -71,4 +72,71 @@
             }
         }  
     }   
+}
+
+#modal-notification {
+    .modal-dialog {
+        width: 20em;
+        height: 14.5em;
+        position:fixed;
+        bottom: -0.9em;
+        right: 1.9em;
+        .modal-header {
+            border: none;
+            padding-bottom: 0;
+            .brand-logo {
+                width: 3em;
+                padding-left: 0.3em;
+            }
+            .title-modal {
+                margin-left: -4em;
+                font-size: 11px;                        
+                .title-notification {
+                    display: inline;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $brand-blue_dark;
+                }   
+            }
+            .modal-hour {
+                font-size: 10px;
+                text-align: right;
+                display: flex;
+                color: $gray_typo;
+                .far {
+                    margin-right: 0.4em;
+                    margin-top: 0.2em;
+                    color: $brand-blue_main;
+                }
+            }  
+        }
+        .modal-body {
+            padding-top: 0;
+            .modal-promotion {
+                padding-left: 0.9em;
+                .title-promotion {
+                    font-size: 30px;
+                    color: $brand-blue_main;
+                    margin-bottom: 0;
+                    span {
+                        font-size: 25px;
+                    }
+                }
+                .text-promotion {
+                    font-size: 12px;
+                    color: $gray_typo;
+                    font-weight: 300;
+                    margin-top: -2em;
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+           .close {
+               color: $brand-blue_main;
+               opacity: 1!important;
+               font-weight: 500;
+           }  
+        }
+    }
 }

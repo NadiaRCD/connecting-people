@@ -17,17 +17,12 @@ body {
 .button {
     @include button;
 }
-
 .fix-margin {
     margin-right: 0!important;
 }
 .display-content {
     display: inherit;
 }
-.fix.width {
-    max-width: 23%!important;
-}
-
 // Componentes
 
 @import './components/tables-orders.scss';

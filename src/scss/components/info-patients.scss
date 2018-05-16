@@ -2,17 +2,17 @@
     display: block;
     position: absolute;
     margin-left: 4.4em;
-    width: 16.45em;
+    width: 80%; /* 16.4em */
     height: 100%;
     border-right: 1px solid $gray_disabled;
-    padding-top: 0.8em;
-    z-index: -1;
+    padding-top: 5%;
+    padding-left: 3%;
     .icon-arrow-left {
-        margin-left: 0.6em;
+        margin-left: 2%;
     }
     .icon-woman {
-        margin-left: 2.0em;
-        margin-right: 2.3em;
+        margin-left: 31%;
+        margin-right: 31%;
         font-size: 2.5em;
         color: $purple;
     }
@@ -24,6 +24,7 @@
         color: $brand-blue_main;
         font-size: 1em;
         font-weight: 600;
+        padding-right: 2%
     }
     .patients-genre-age {
         margin-top: 0.9em;

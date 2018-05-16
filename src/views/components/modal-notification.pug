@@ -1,0 +1,23 @@
+.modal.fade#modal-notification(tabindex="-1", role="dialog")
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-header
+                img.brand-logo(src="assets/imgs/bupa-brand-circle.png", alt="")  
+                .title-modal
+                    p.title-notification Clínica Bupa Santiago
+                    br
+                    p.subtitle  Por todo el mes de mayo
+                .modal-hour
+                    i.far.fa-clock
+                    p 10:30
+            .modal-body             
+                .modal-promotion
+                    p.title-promotion 20% Descuento 
+                        span en Exámenes
+                    br
+                    p.text-promotion Agendando cualquier examen en la 
+                        span clínica Bupa Santiago
+                button.close(type="button", data-dismiss="modal", aria-label="Close")
+                    span(aria-hidden="true") ok
+                        
+                        
